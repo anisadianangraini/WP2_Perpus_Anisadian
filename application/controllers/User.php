@@ -32,7 +32,7 @@ class User extends CI_Controller
         $this->load->view('templates/footer');
     }
 
-    public function ubahProfil()
+    public function ubahprofil()
     {
         $data['judul'] = 'Ubah Profil';
         $data['user'] = $this->ModelUser->cekData(['email' => $this->session->userdata('email')])->row_array();
